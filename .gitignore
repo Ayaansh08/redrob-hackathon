@@ -31,6 +31,7 @@ outputs/
 *.jsonl
 sample_*.json
 sample_*.csv
+!sample_candidates.json
 candidate_schema.json
 submission_metadata_template.yaml
 jd.txt
