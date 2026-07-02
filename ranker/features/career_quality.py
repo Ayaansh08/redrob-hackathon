@@ -1,0 +1,1 @@
+"""Career Quality feature module."""

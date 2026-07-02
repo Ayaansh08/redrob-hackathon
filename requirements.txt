@@ -1,0 +1,6 @@
+# Requirements
+pandas
+numpy
+sentence_transformers
+rank_bm25
+gradio

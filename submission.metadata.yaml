@@ -1,0 +1,70 @@
+team_name: Tap Zero
+
+primary_contact:
+  name: Ayaansh Rawat
+  email: ayaanshrawat892@gmail.com
+  phone: 9045124164
+
+github_repo: "https://github.com/<your-username>/<repo-name>"
+
+sandbox_link: "https://huggingface.co/spaces/<your-username>/<space-name>"
+
+team_members:
+  - Ayaansh Rawat
+  - Gaurav Kumar Verma
+  - Tanmay Sharma
+  - Vidit Goyal
+
+compute_environment:
+  os: Windows 11
+  python: "3.11"
+  cpu: Intel Core i5-12450H
+  ram: "16 GB"
+
+ai_tools_used:
+  - ChatGPT
+  - GitHub Copilot
+
+methodology_summary: >
+  A hybrid candidate ranking system combining semantic embeddings,
+  BM25 lexical retrieval, career quality evaluation, behavioral
+  analysis, stability scoring, and weighted score aggregation to
+  identify the most suitable candidates for a Senior AI Engineer role.
+  The pipeline incorporates both semantic understanding and rule-based
+  heuristics to reduce false positives while improving ranking quality.
+
+runtime:
+  preprocessing: "< 5 minutes"
+  embedding_generation: "< 5 minutes"
+  candidate_ranking: "< 5 minutes"
+  total_pipeline: "< 5 minutes"
+
+hardware_constraints:
+  cpu_only: true
+  internet_required: false
+  max_memory: "< 16 GB"
+  gpu_required: false
+
+reproducibility:
+  command: |
+    python scripts/01_preprocess.py
+    python scripts/02_embeddings.py
+    python scripts/03_score.py
+    python scripts/04_generate_submission.py
+
+repository_contents:
+  - Source code
+  - Ranking scripts
+  - Utility modules
+  - requirements.txt
+  - README.md
+  - submission_metadata.yaml
+  - Sandbox application
+
+notes: >
+  Due to repository size limitations, the original competition dataset,
+  generated embeddings, BM25 indices, processed artifacts, and output
+  files are excluded from version control. The repository includes all
+  necessary scripts to regenerate these artifacts locally before
+  executing the ranking pipeline. The sandbox demonstrates the complete
+  workflow using a small sample dataset.
